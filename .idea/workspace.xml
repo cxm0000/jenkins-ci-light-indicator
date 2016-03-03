@@ -27,8 +27,8 @@
           <file leaf-file-name="syncJenkins.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/syncJenkins.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.41845664">
-                  <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.48607796">
+                  <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -68,20 +68,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="getBuildInfo.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="getBuildInfo.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/getBuildInfo.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-24.192308">
+                <state vertical-scroll-proportion="0.5003978">
                   <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="getBuildInfoWithLoops.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="getBuildInfoWithLoops.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/getBuildInfoWithLoops.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.716786">
+                <state vertical-scroll-proportion="-34.653847">
                   <caret line="53" column="2" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
                   <folding />
                 </state>
@@ -211,6 +211,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -289,6 +291,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -350,26 +357,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getBuildInfo.php">
+    <entry file="file://$PROJECT_DIR$/getBuildInfoWithLoops.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.192308">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state vertical-scroll-proportion="-34.653847">
+          <caret line="53" column="2" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getBuildInfoWithLoops.php">
+    <entry file="file://$PROJECT_DIR$/getBuildInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.716786">
-          <caret line="53" column="2" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.5003978">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/syncJenkins.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41845664">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.48607796">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
           <folding />
         </state>
       </provider>

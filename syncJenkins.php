@@ -7,7 +7,8 @@
     static $colorMap = array(
         "SUCCESS" => "25500",
         "FAILURE" => "0",
-        "BUILDING" => "12750",
+        "NEXT_SUCCESS" => "28504",
+        "NEXT_FAILURE" => "6688",
         "UNDEFINED" => "50000"
     );
 
@@ -16,28 +17,7 @@
     }
     var_dump($lastBuild);
 
-    if ($lastBuild->isBuilding()) {
-        $lightColor = $colorMap["BUILDING"];
-    } else {
-        // get the last build result and fetch the matched color
-        $lastResult = $lastBuild->getBuildResult();
-        if (!in_array($lastResult, array_keys($colorMap))) {
-            echo ("The last build result is undetermined, will set the light to be yellow");
-            $lightColor = $colorMap["UNDEFINED"];
-        } else {
-            $lightColor = $colorMap[$lastResult];
-        }
-    }
-
     $client = new \Phue\Client('172.31.46.151', '143f312e30a5f7f978c3190560b8d36f');
-
-    try {
-        $client->sendCommand(
-            new \Phue\Command\Ping
-        );
-    } catch (\Phue\Transport\Exception\ConnectionException $e) {
-        echo 'There was a problem accessing the bridge';
-    }
 
     $isAuthenticated = $client->sendCommand(
         new \Phue\Command\IsAuthorized
@@ -48,9 +28,31 @@
     }
 
     $light = $client->getLights()[1];
+    $currentColor = $light->getHue();
+    echo "current color hue: $currentColor \n";
+
+    if (!$lastBuild->isBuilding()) {
+        // get the last build result and fetch the matched color
+        $lastResult = $lastBuild->getBuildResult();
+        if (!in_array($lastResult, array_keys($colorMap))) {
+            echo("The last build result is undetermined, will set the light to be yellow");
+            $lightColor = $colorMap["UNDEFINED"];
+        } else {
+            $lightColor = $colorMap[$lastResult];
+        }
+    } else {
+        if ($currentColor == $colorMap["NEXT_SUCCESS"] || $currentColor == $colorMap["NEXT_FAILURE"]) {
+            // do nothing;
+            $lightColor = $currentColor;
+        } elseif ($currentColor == $colorMap["SUCCESS"]) {
+            $lightColor = $colorMap["NEXT_SUCCESS"];
+        } elseif($currentColor == $colorMap["FAILURE"]) {
+            $lightColor = $colorMap["NEXT_FAILURE"];
+        }
+    }
 
     // If the color does not change, we dont send the command
-    if ($light->getHue() == $lightColor) {
+    if ($currentColor == $lightColor) {
         return;
     }
 
