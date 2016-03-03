@@ -6,22 +6,12 @@
     include_once __DIR__ . "/classes/jenkinsSynchronizer.php";
 
 
-    //$dotenv = new Dotenv\Dotenv(__DIR__);
-    //$dotenv->load();
+    $dotenv = new Dotenv\Dotenv(__DIR__);
+    $dotenv->load();
 
     const INTERVAL = 10; // in seconds;
 
-    $api = "http://build.tm.tmcs/api/";
-    // mnxweb release pipeline sut
-    $jobName = "mfol-hackathon-CI-light-test-build";
-
-    $requestURL = $api . 'job/' . $jobName;
-
-    $api = "http://build.tm.tmcs/job/$jobName/lastBuild/api/json";
-    $requestURL = $api;
-
-    //$userName = $_ENV['JENKINS_USERNAME'];
-    //$password = $_ENV['JENKINS_PASS'];
+    $requestURL = $_ENV["JENKINS_JOB_URL"];
 
     $headers = array(
         'Content-Type: application/json',
