@@ -8,7 +8,7 @@
         "SUCCESS" => "25500",
         "FAILURE" => "0",
         "NEXT_SUCCESS" => "28504",
-        "NEXT_FAILURE" => "6688",
+        "NEXT_FAILURE" => "61827",
         "UNDEFINED" => "50000"
     );
 
@@ -48,6 +48,8 @@
             $lightColor = $colorMap["NEXT_SUCCESS"];
         } elseif($currentColor == $colorMap["FAILURE"]) {
             $lightColor = $colorMap["NEXT_FAILURE"];
+        } else {
+            $lightColor =  $colorMap["UNDEFINED"];
         }
     }
 
