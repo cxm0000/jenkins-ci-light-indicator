@@ -1,0 +1,115 @@
+[
+    {
+        "name": "sqmk/phue",
+        "version": "v1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sqmk/Phue.git",
+            "reference": "72f84116a81177a1dfadacd9a0be5ab8220baef1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sqmk/Phue/zipball/72f84116a81177a1dfadacd9a0be5ab8220baef1",
+            "reference": "72f84116a81177a1dfadacd9a0be5ab8220baef1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.8.0",
+            "phpunit/phpunit": "3.7.25",
+            "squizlabs/php_codesniffer": "1.4.6"
+        },
+        "suggest": {
+            "ext-curl": "Allows usage of cURL transport adapter"
+        },
+        "time": "2015-11-26 16:24:32",
+        "bin": [
+            "bin/phue-create-user",
+            "bin/phue-bridge-finder",
+            "bin/phue-light-finder",
+            "bin/phue-list-lights"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Phue": "library/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Michael Squires",
+                "email": "sqmk@php.net",
+                "role": "lead"
+            }
+        ],
+        "description": "Phue - Philips Hue PHP client",
+        "homepage": "http://github.com/sqmk/Phue",
+        "keywords": [
+            "client",
+            "hue",
+            "philips",
+            "phue"
+        ]
+    },
+    {
+        "name": "vlucas/phpdotenv",
+        "version": "v2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vlucas/phpdotenv.git",
+            "reference": "c10040e0df17d2ee88e9212b50cbe9319e878f59"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/c10040e0df17d2ee88e9212b50cbe9319e878f59",
+            "reference": "c10040e0df17d2ee88e9212b50cbe9319e878f59",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2015-10-28 18:53:35",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Dotenv\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD"
+        ],
+        "authors": [
+            {
+                "name": "Vance Lucas",
+                "email": "vance@vancelucas.com",
+                "homepage": "http://www.vancelucas.com"
+            }
+        ],
+        "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+        "homepage": "http://github.com/vlucas/phpdotenv",
+        "keywords": [
+            "dotenv",
+            "env",
+            "environment"
+        ]
+    }
+]

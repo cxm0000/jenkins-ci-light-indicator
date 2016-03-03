@@ -1,0 +1,13 @@
+{
+    "name": "ming/ci-lights",
+    "authors": [
+        {
+            "name": "Xiaoming Cai",
+            "email": "xiaoming.cai@ticnet.se"
+        }
+    ],
+    "require": {
+        "sqmk/phue": "v1.3.0",
+        "vlucas/phpdotenv": "2.1"
+    }
+}
